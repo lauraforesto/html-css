@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou, simplesmente, aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="fotoexc11/p300.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="fotoexc11/m700.png" type="image/png">
+        <img src="fotoexc11/g1000.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="media/happy-mistake.mp3" controls></audio>
+    <audio preload="metadata" controls>
+        <source src="media/guanacast-33.mp3" type="audio/mpeg">
+    </audio>
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Estevídeo está hospedado no meu próprio servidor.</p>
+    <video src="media/meu video hb.mp4" width="500px" controls></video>
+
+    <h1>Inserindo vídeos do YouTube.</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/oM-sefmLhrs?si=9A_fKW_umqgdzMbN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>
