@@ -12,7 +12,6 @@
         table {
             width: 600px;
             border-collapse: collapse;
-            position: relative;
         }
 
         caption {
@@ -21,9 +20,33 @@
             padding: 10px;
         }
 
-        td, th {
+        th {
             border: 1px solid gray;
             padding: 10px;
+        }
+
+        td {
+            border: 1px solid gray;
+            padding: 10px;
+            font-weight: 200;
+        }
+
+        thead {
+            background-color: rgb(79, 79, 79);
+            color: white;
+            font-weight: bold;
+        }
+
+        .media {
+            background-color: rgb(79, 79, 79);
+            color: white;
+            font-weight: bold;
+        }
+
+        tfoot {
+            background-color: rgb(41, 41, 41);
+            color: white;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -32,60 +55,60 @@
         <caption>Boletim de Talita Sara Vicentini</caption>
         <thead>
             <tr>
-                <th rowspan="2" scope="colgroup">Área</th>
-                <th rowspan="2" scope="colgroup">Disciplinas</th>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
                 <th colspan="2" scope="colgroup">Notas</th>
-                <th rowspan="2" scope="colgroup">Média</th>
+                <th rowspan="2" scope="col">Média</th>
             </tr>
             <tr>
-                <th scope="colgroup">Nota 1</th>
-                <th scope="colgroup">Nota 2</th>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <th rowspan="4" scope="rowgroup">Exatas</th>
-                <th>Matemática</th>
-                <th>5.0</th>
-                <th>3.0</th>
-                <th>4.0</th>
+                <td>Matemática</td>
+                <td>5.0</td>
+                <td>3.0</td>
+                <td>4.0</td>
             </tr>
             <tr>
-                <th>Física</th>
-                <th>7.0</th>
-                <th>3.5</th>
-                <th>5.3</th>
+                <td>Física</td>
+                <td>7.0</td>
+                <td>3.5</td>
+                <td>5.3</td>
             </tr>
             <tr>
-                <th>Química</th>
-                <th>5.5</th>
-                <th>2.7</th>
-                <th>4.1</th>
+                <td>Química</td>
+                <td>5.5</td>
+                <td>2.7</td>
+                <td>4.1</td>
             </tr>
             <tr>
-                <th>Biologia</th>
-                <th>7.9</th>
-                <th>8.5</th>
-                <th>8.2</th>
+                <td>Biologia</td>
+                <td>7.9</td>
+                <td>8.5</td>
+                <td>8.2</td>
             </tr>
-            <tr>
+            <tr class="media">
                 <th colspan="4" scope="row">Média de Exatas</th>
                 <th>5.4</th>
             </tr>
             <tr>
                 <th rowspan="2" scope="rowgroup">Humanas</th>
-                <th>História</th>
-                <th>7.9</th>
-                <th>8.9</th>
-                <th>8.4</th>
+                <td>História</td>
+                <td>7.9</td>
+                <td>8.9</td>
+                <td>8.4</td>
             </tr>
             <tr>
-                <th>Geografia</th>
-                <th>5.7</th>
-                <th>7.5</th>
-                <th>6.6</th>
+                <td>Geografia</td>
+                <td>5.7</td>
+                <td>7.5</td>
+                <td>6.6</td>
             </tr>
-            <tr>
+            <tr class="media">
                 <th colspan="4" scope="row">Média de Humanas</th>
                 <th>7.5</th>
             </tr>
