@@ -1,0 +1,7 @@
+/* Aparelho em modo retrato */
+
+body {
+    background: url(../imagens/cev-portrait.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
